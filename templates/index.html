@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flower Species Prediction Terminal </title>
+</head>
+
+<body style = "background-color: rgb(168, 34, 117);">
+    
+    <h1> Flower Species Prediction</h1>
+    <form method="GET" action ="/predict_species">
+        <label><b>Sepal-Length:</b></label>
+        <input type = "text" name = "SepalLengthCm">
+        </select>
+        <br>
+        <br>
+
+        <label><b>Sepal-Width:</b></label>
+        <input type = "text" name = "SepalWidthCm">
+        </select>
+        <br>
+        <br>
+
+        <label><b>Petal-Length:</b></label>
+        <input type = "text" name = "PetalLengthCm">
+        </select>
+        <br>
+        <br>
+
+        <label><b>Petal-Width:</b></label>
+        <input type = "text" name = "PetalWidthCm">
+        </select>
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+        <input type = "submit" value = "SUBMIT">
+
+        <br>
+            <p> <b>The predicted species of flower is {{ prediction }} </b> </p>
+
+        </form>
+    
